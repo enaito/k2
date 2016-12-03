@@ -1,0 +1,188 @@
+/*  ===========================================================================================================================
+    Background Image
+    ===========================================================================================================================
+*/
+
+html {
+  background-color: #000000;
+  background: url("images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+
+}
+
+/*  ===========================================================================================================================
+    Navigation Toolbar
+    ===========================================================================================================================
+*/
+
+nav ul, footer ul, p {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+p {
+  font-weight: normal;
+}
+
+nav ul li, footer ul li {
+    display: block;
+    float: right;
+    margin: 14px 16px;
+    text-align: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: .3s background-color;
+}
+
+a.active {
+    text-decoration: underline;
+    cursor: default;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.img-responsive a {
+    display: block;
+}
+
+/*  ===========================================================================================================================
+    Header
+    ===========================================================================================================================
+*/
+
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: center;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+
+
+/*  ===========================================================================================================================
+    Img Link Hover Effects
+    ===========================================================================================================================
+*/
+.imgLink {
+    display: block;
+    height: 345px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.imgLink a img {
+  height: 100%; 
+}
+
+.imgLink p {
+    font-size: 2.5em;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    width: 100%;
+}
+
+.hovereffect {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 345px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: 460px;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left;
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
