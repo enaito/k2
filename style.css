@@ -1,34 +1,62 @@
-html {
-    /*background: url("images/bg.jpg") no-repeat center center fixed;*/
-}
-
 body {
-    background: url("images/bg.jpg") no-repeat center center fixed;
+    background: url("images/background.png") no-repeat center center fixed;
     font-family: Helvetica, Arial, Sans-Serif;
+    margin: 0px;
 }
 
 nav ul {
-    font-weight: bold;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 li {
     float: right;
-    display: block;
-    margin: 14px 16px;
 }
 
-a {
-    color: black;
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 18px;
     text-decoration: none;
 }
 
-a:hover {
-    color: white;
+li a:hover:not(.active), .dropdown:hover:not(.active) .dropbtn:hover:not(.active) {
+    background-color: #000;
 }
 
-a:active {
-    text-decoration: underline;
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #777;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 
 h1 {
@@ -39,14 +67,5 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
+    padding: 10px;
 }
-/*
-
-
-
-
-/*  ===========================================================================================================================
-    Img Link Hover Effects
-    ===========================================================================================================================
-
-*/
