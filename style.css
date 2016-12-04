@@ -2,6 +2,7 @@ body {
     background: url("images/background.png") no-repeat center center fixed;
     font-family: Helvetica, Arial, Sans-Serif;
     margin: 0px;
+    margin-bottom: 50px;
 }
 
 nav ul {

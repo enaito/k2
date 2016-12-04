@@ -12,13 +12,11 @@
     background-color:#999;
     font-size: 20px;
     padding: 20px;
-    cursor: pointer;
     font-weight: bold;
     border-radius: 10px;
 }
 
 .day .content {
-    display: none;
     padding : 5px;
 }
 
@@ -28,12 +26,14 @@
 }
 
 .pgContent, .sidebar { 
-	float: left;
+	float: right;
+    /*this was left before*/
 }
 
 .pgContent { 
 	width: 85%;
-	margin-right: 5%;
+	margin-left: 5%;
+    /*this was right before*/
 	margin-bottom: 50px;
 }
 

@@ -1,8 +1,3 @@
-function dayClick(day) {
-    $title = $(day).next();
-    $title.slideToggle(500);
-}
-
 function buttonMove() {
     var element = $('.box'),
         originalY = element.offset().top;
@@ -20,20 +15,8 @@ function buttonMove() {
 }
 
 $(document).ready(function() {
-    $(".title").on('click', function () {
-        dayClick(this);
-    });
-
     $('.box').on("click", function() { 
-        $(".title").each(function(i) {
-            dayClick(this);
-        });
-        if( $('.box').text() == "Expand All") {
-            $('.box').text("Contract All");
-        }
-        else {
-            $('.box').text("Expand All");
-        }
+       
     });
 
     buttonMove();
