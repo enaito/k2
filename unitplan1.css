@@ -44,6 +44,10 @@
 .sidebar { 
 	padding-top: 2%;
 	width: 10%;
+/*    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;*/
+/*    transform: translateZ(0);
+    -webkit-transform: translateZ(0);*/
 }
 
 .box { 

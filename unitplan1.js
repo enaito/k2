@@ -1,23 +1,11 @@
-function buttonMove() {
-    var element = $('.box'),
-        originalY = element.offset().top;
-    var topMargin = 20;
-
-    $(window).on('scroll', function(event) {
-        var scrollTop = $(window).scrollTop();
-    
-        element.stop(false, false).animate({
-            top: scrollTop < originalY
-                ? 0
-                : scrollTop - originalY + topMargin
-        }, 175);
-    });
-}
-
 $(document).ready(function() {
-    $('.box').on("click", function() { 
-       
-    });
+    var element = $('.box');
+    var originalY = element.offset().top;
 
-    buttonMove();
+    $(window).on('scroll', function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > originalY) {
+            $(element).css("top", scrollTop-originalY);
+        }
+    });
 });
