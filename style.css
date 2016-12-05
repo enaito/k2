@@ -13,11 +13,11 @@ nav ul {
     background-color: #3a2613;
 }
 
-li {
+nav li {
     float: right;
 }
 
-li a, .dropbtn {
+nav li a, .dropbtn {
     display: block;
     color: white;
     text-align: center;
@@ -25,11 +25,11 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover:not(.active), .dropdown:hover:not(.active) .dropbtn:hover:not(.active) {
+nav li a:hover:not(.active), .dropdown:hover:not(.active) .dropbtn:hover:not(.active) {
     background-color: #140d06;
 }
 
-li.dropdown {
+nav li.dropdown {
     display: block;
 }
 

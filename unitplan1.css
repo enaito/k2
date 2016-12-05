@@ -66,3 +66,24 @@
     color: white;
     text-decoration: none;
 }
+
+h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+/*p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1px;
+}*/
+
+li {
+    text-align: left;
+}
+
+.actTitle {
+    font-weight: bold;
+}
