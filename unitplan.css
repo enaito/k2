@@ -1,24 +1,26 @@
+/*dark brown nav bar 3a2613
+  darker nav bar hlt 140d06
+  lighter nav bar dp 603f1f
+  lines bt brown box d3d3d3
+*/
 .day {
     width:80%;
-    border:1px solid #d3d3d3;
     margin: auto;
     text-align: center;
-    border: 1px solid #000;
-    border-radius: 10px;
-    background-color: #d1d1d1;
+    background-color: #b8e0b9;
 }
 
 .day .title {
-    background-color:#999;
+    border-bottom: 1px solid #3a2613;
+    border-top: 1px solid #3a2613;
+    background-color:#4CAF50;
     font-size: 20px;
     padding: 20px;
-    cursor: pointer;
     font-weight: bold;
-    border-radius: 10px;
+    color: white;
 }
 
 .day .content {
-    display: none;
     padding : 5px;
 }
 
@@ -28,25 +30,60 @@
 }
 
 .pgContent, .sidebar { 
-	float: left;
+	float: right;
+    /*this was left before*/
 }
 
 .pgContent { 
 	width: 85%;
-	margin-right: 5%;
+	margin-left: 5%;
+    /*this was right before*/
 	margin-bottom: 50px;
 }
 
 .sidebar { 
 	padding-top: 2%;
 	width: 10%;
+/*    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;*/
+/*    transform: translateZ(0);
+    -webkit-transform: translateZ(0);*/
 }
 
 .box { 
 	position: relative;
-	background: #d1d1d1;
-	border: 1px solid #000;
+	background: #3a2613;
 	padding: 10px;
-	border-radius: 10px;
 	text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.box:last-child {
+    border-bottom: 0;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+/*p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1px;
+}*/
+
+li {
+    text-align: left;
+}
+
+.actTitle {
+    font-weight: bold;
 }
